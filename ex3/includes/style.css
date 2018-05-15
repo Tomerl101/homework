@@ -8,6 +8,7 @@ header,div,aside,section,main,footer,article,nav {
 }
 a{
     text-decoration: none;
+    color: #fff;
 }
 a:visited{
     color:#fff;
@@ -135,7 +136,6 @@ nav ul {
 }
 section .box{
     background-color: #000;
-    opacity: 0.6;
     width: 212px;
     margin-left: 30px;
     margin-bottom: 19px
