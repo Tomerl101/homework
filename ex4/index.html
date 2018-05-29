@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="includes/libs/slider.css">
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myMain">
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+        <div class="section one">
+          <div class="wrap start col">
+            <h1>CV Form</h1> 
+            <h2>BY TOMER LOTAN</h2>
+            <i class="fas fa-arrow-circle-down fadeInDown animated"></i>
+            <img src="includes/Untitled-1.svg" alt="">
+            <div class="cta"></div>
+          </div>
+          </div>
+        <div class="section two ">
+          <div class="wrap col">
+              <h1>Hi There!</h1>
+              <section>
+                <h2>What is your name?</h2>
+                <div class="cta">✏️<input id="finput" type="text" name="fullname" placeholder="Your Name">
+                    <p>must contain atleast 3 characters</p>
+                </div>
+                <!-- <div class="cta"><span>shop now</span></div> -->
+                <h2>Password?</h2>
+                <div class="cta">🔒<input  type="password" name="pass" placeholder="Password"> 
+                    <p>must contain 5 - 12 characters</p>
+                </div>  
+                <h2>Image</h2> 
+                <div class="cta" >
+                    <input type="file" name="face" id='image' aria-describedby="fileHelp">
+                </div>
+                <h2>Prefered job?</h2>
+                <div class="cta"><select name="age">
+                    <option value="Developer">👩‍💻  Developer</option>
+                    <option value="Analyst">👨‍🏫  Analyst</option>
+                    <option value="IT">👩‍🔧  IT</option>
+                    <option value="Cyber">👨‍✈️  Cyber</option>
+                  </select>
+                </div>
+                <!-- <div class="cta"><span>shop now</span></div> -->
+                <h2>Years to graduate</h2>
+                <div class="cta"><input type="number" name='coffee' value="1" ></div>  
+                <h2>Salary?</h2>
+                <div class="cta"><div class="slider-wrapper">
+                    <input id="range-slider" name="temper" class="fluid-slider" type="range" value="12800" min="0" max="16000">
+                    <span id="range-label" class="range-label"></span>
+                  </div>
+                </div> 
+              </section>
+          </div>
+          </div>
+        <div class="section three">
+            <div class="wrap row">
+                <section>
+                    <h1>So tell me </h1>
+                    <h2>📚 what language do you know?</h2>
+                    <div class="cta">
+                        <label>
+                            JS<input type="checkbox" name="interests[]" class="option-input checkbox" value="js"/>
+                        </label>
+                        <label>
+                            C++<input type="checkbox" name="interests[]" class="option-input checkbox" value="c++" />
+                        </label> 
+                        <label>
+                            C<input type="checkbox" name="interests[]" class="option-input checkbox" value="c"/>
+                        </label> 
+                        <label>
+                            JAVA<input type="checkbox" name="interests[]" class="option-input checkbox" />
+                        </label> 
+                    </div>
+                </section>
+                <section>
+                    <h1 class='fname'></h1>
+                    <h2>Are you Specialize in Web?</h2>
+                    <div class="cta" id="spec">
+                        <label>
+                            <input type="radio" name="gender" class="option-input radio" name="example" value="yes"/>
+                            Hell Yeah 🤘
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" class="option-input radio" name="example" value="no"/>
+                            Nope 👎
+                        </label>
+                    </div> 
+                    <div class="cta" id='hideMe'>
+                        <span id='counter'>1024</span> sign to yonit course so far 💁‍
+                    </div>
+                </section>
+            </div>
+        </div>
+      <div class="section four">
+            <div class="wrap row">
+                <h1></h1>
+                <h1>how can one contact you</h1>
+                <div class="marginTop">
+                    <div class="cta space"><i class="fab fa-linkedin"></i><input  type="url" name="website" placeholder="Linkedin"> </div>
+                    <div class="cta space"><i class="fas fa-envelope-square"></i><input  type="email" name="mail" placeholder="Email">
+                        <p>Email must be a valid</p>
+                    </div>
+                    <div class="cta space"><i class="fas fa-phone-square"></i><input  type="text" name="phone" placeholder="Phone">
+                        <p>Telephone must be a valid</p> 
+                </div>
+                </div>
+            </div>
+      </div>
+      <div class="section five">
+            <div class="wrap col">
+                <h1>Is there any thing else you like to tell?</h1>
+                <textarea class='cta' name="address" id="" cols="5" rows="5"></textarea>
+            </div>
+            <div class="cta">
+                <input id="btn" type="submit" value="submit">
+            </div> 
+      </div>
+      </form>
+      </div>
+      <script src="includes/app.js"></script>
+</body>
+</html>
